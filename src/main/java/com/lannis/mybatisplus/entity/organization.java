@@ -23,7 +23,7 @@ public class organization {
     /**
      * 机构编码
      */
-    @TableId(value = "id",type = IdType.INPUT)
+    @TableId(value = "code",type = IdType.INPUT)
     private String code;
     /**
      * 机构名称

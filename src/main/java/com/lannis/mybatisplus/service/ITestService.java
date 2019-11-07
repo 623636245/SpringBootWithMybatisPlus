@@ -3,6 +3,8 @@ package com.lannis.mybatisplus.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.lannis.mybatisplus.entity.organization;
 
+import java.util.List;
+
 /**
  * @PackgeName: com.lannis.mybatisplus.service.serviceImpl
  * @ClassName: ITestService
@@ -13,4 +15,5 @@ import com.lannis.mybatisplus.entity.organization;
  * @Description: 测试接口层，继承IService
  */
 public interface ITestService extends IService<organization> {
+    List<organization> getAllRecords();
 }

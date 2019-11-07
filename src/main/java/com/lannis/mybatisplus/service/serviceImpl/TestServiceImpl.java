@@ -6,6 +6,9 @@ import com.lannis.mybatisplus.mapper.TestMapper;
 import com.lannis.mybatisplus.service.ITestService;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+import java.util.List;
+
 /**
  * @PackgeName: com.lannis.mybatisplus.service.serviceImpl
  * @ClassName: TestServiceImpl
@@ -17,4 +20,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class TestServiceImpl extends ServiceImpl<TestMapper, organization> implements ITestService {
+    @Resource
+    TestMapper testMapper;
+    @Override
+    public List<organization> getAllRecords() {
+
+        return testMapper.getAllRecords();
+    }
 }

@@ -31,4 +31,8 @@ public class TestController {
     public String sayHelloWorld() {
         return testService.list().toString();
     }
+    @RequestMapping("/test2")
+    public String sayHelloWorld2() {
+        return testService.getAllRecords().toString();
+    }
 }

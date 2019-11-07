@@ -3,6 +3,8 @@ package com.lannis.mybatisplus.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.lannis.mybatisplus.entity.organization;
 
+import java.util.List;
+
 /**
  * @PackgeName: com.lannis.mybatisplus.mapper
  * @ClassName: TestMapper
@@ -14,4 +16,5 @@ import com.lannis.mybatisplus.entity.organization;
  */
 public interface TestMapper extends BaseMapper<organization> {
 
+    List<organization> getAllRecords();
 }

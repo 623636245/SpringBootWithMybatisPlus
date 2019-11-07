@@ -5,9 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 //Mapper扫描
-@MapperScan(basePackages = {"com.lannis.mybatisplus.mapper"})
+@MapperScan(basePackages = {"com.lannis.mybatisplus.**.mapper*"})
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class MybatisplusApplication {
 
     public static void main(String[] args) {

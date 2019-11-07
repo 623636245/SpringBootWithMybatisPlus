@@ -1,6 +1,5 @@
 server:
   port: 8888
-
 spring:
   #json 时间转换
   jackson:
@@ -32,3 +31,6 @@ mybatis-plus:
   global-config:
     # 关闭MP3.0自带的banner
     banner: false
+logging:
+  level:
+    com.lannis.mybatisplus.mapper: debug
